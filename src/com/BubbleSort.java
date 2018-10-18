@@ -10,7 +10,7 @@ public static void main(String args[])
 	long starttime = System.nanoTime();
 	ArrayList<Integer> ar = new ArrayList<Integer>();
 	Scanner sc = new Scanner(System.in);
-	System.out.print("Specify length of sorting elemets");
+	System.out.print("Specify length of sorting elemets:");
 	int n = sc.nextInt();
 	for(int i=0;i<n;i++)
 	{
