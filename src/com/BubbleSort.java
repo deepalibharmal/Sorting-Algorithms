@@ -1,6 +1,7 @@
 package com;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class BubbleSort {
@@ -17,17 +18,15 @@ public static void main(String args[])
 		ar.add(sc.nextInt());
 	}
 	int temp;
-	for(int i=0;i<n-2;i++)
-		for(int j=i+1;j<n-1;j++)
+	for(int i=0;i<n-1;i++)
+		for(int j=0;j<n-i-1;j++)
 		{
 			if(ar.get(j)>ar.get(j+1))
-			{
-				temp=ar.get(j);
-				ar.set(j,ar.get(j+1));
-				ar.set(j+1,ar.get(j));
+			{	
+				Collections.swap(ar, j, j+1);
 			}
 				
-				
+				 
 		}
 	System.out.println(ar);
 	long endtime = System.nanoTime();

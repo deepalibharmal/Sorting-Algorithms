@@ -20,10 +20,8 @@ public class SelectionSort {
     	for(int j=i+1;j<n;j++)
     	{
     		if (ar.get(i) > ar.get(j))
-    		{   temp = ar.get(i);
-    			ar.set(i, ar.get(j));
-    			ar.set(j,temp);
-    			
+    		{  
+    			Collections.swap(ar,i,j);    			
     		}
     			
     	}
